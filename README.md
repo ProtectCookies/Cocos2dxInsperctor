@@ -1,6 +1,6 @@
 # Cocos2dxInsperctor
 修改AppDelegate.cpp代码，并且自行处理一下自己代码适配和设置win32窗口大小的地方
-···#if WIN32 // 头文件添加
+```#if WIN32 // 头文件添加
 #include "CCIMGUIGLViewImpl.h"
 #include "CCImGuiLayer.h"
 #endif
@@ -24,4 +24,4 @@
                         runningScene->addChild(ImGuiLayer::create(), INT_MAX, "ImGUILayer");
                 }
         }, this, 0, false, "checkIMGUI");
-···#endif
+```#endif
